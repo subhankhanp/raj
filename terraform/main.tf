@@ -1,4 +1,6 @@
-
+provider "aws" {
+  region = "ap-south-1"  # Set your desired region here
+}
 
 resource "aws_instance" "ec2first" {
   ami           = "ami-08e5424edfe926b43"  # Replace with your desired AMI ID
