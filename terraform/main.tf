@@ -1,6 +1,6 @@
 
 
-resource "aws_instance" "ec2-first" {
+resource "aws_instance" "ec2first" {
   ami           = "ami-08e5424edfe926b43"  # Replace with your desired AMI ID
   instance_type = "t2.micro"      # Replace with your desired instance type
   key_name      = "newawskeypair"   # Replace with your desired key pair name
@@ -13,6 +13,7 @@ resource "aws_instance" "ec2-first" {
     volume_type           = "gp2"
     volume_size           = 30  # Replace with your desired volume size in GB
     delete_on_termination = true
+}
   # Optional: Customize the instance tags
   tags = {
     Name = "myec2"
